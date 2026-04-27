@@ -96,11 +96,14 @@ public class BaseClass {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless"); //Run Chrome in headless mode
 			options.addArguments("--disable-gpu"); //Disable GPU for headless mode
+			options.addArguments("--start-maximized");
 			//options.addArguments("--window-size=1920,1080"); //Set window size
+			options.addArguments("--force-device-scale-factor=1");
+			options.addArguments("--high-dpi-support=1");
 			options.addArguments("--disable-notifications"); //Disable browser notification
 			options.addArguments("--no-sandbox"); //Required for some CI environments like Jenkins
 			options.addArguments("--disable-dev-shm-usage"); //Resolve issues in resource-limited environments
-			
+
 			//driver = new ChromeDriver();
 			driver.set(new ChromeDriver(options)); //changes for thread usage
 			ExtentManager.registerDriver(getDriver());

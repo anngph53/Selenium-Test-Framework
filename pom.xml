@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.orangeHRM</groupId>
-  <artifactId>OrangeHRMProject</artifactId>
+  <artifactId>OrangeHRMProjectCOPY</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
   <name>OrangeHRMProject</name>
@@ -17,11 +17,11 @@
   </properties>
 
   <dependencies>
-    <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
-	    <version>4.41.0</version>
+	    <version>4.43.0</version>
 	    <scope>compile</scope>
 	</dependency>
 	<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
