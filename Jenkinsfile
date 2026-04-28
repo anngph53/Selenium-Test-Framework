@@ -40,7 +40,7 @@ pipeline {
 		success {
 			emailext (
 				to: 'anng.ph53@gmail.com',
-				subject: "Build Success: ${env,JOB_NAME} #${env.BUILD_NUMBER}",
+				subject: "Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
 				body: """
 				<html>
 				 <body>
